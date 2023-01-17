@@ -11,10 +11,10 @@ export class UserListComponent implements OnInit {
 
   //create an array of Objects
   userInfoList: UserInfo[] = [
-    new UserInfo("Jane","Limp","jane_limp@gmail.com","JaneLimp"),
-    new UserInfo("Simohn","Beg","simohn_beg@gmail.com","SimBeg"),
-    new UserInfo("Nick","kafman","nick_kafman@gmail.com","Nicki"),
-    new UserInfo("Mari","Doe","mari_doe@gmail.com","MariDoe")
+    new UserInfo("Jane","Limp","jane_limp@gmail.com","JaneLimp",98),
+    new UserInfo("Simohn","Beg","simohn_beg@gmail.com","SimBeg",102),
+    new UserInfo("Nick","kafman","nick_kafman@gmail.com","Nicki",23),
+    new UserInfo("Mari","Doe","mari_doe@gmail.com","MariDoe",183)
   ];
 
 
