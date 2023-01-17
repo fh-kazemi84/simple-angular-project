@@ -7,6 +7,7 @@
             <th>Email</th>
             <th>Username</th>
             <th>UserId</th>
+            <th>2-digit ID ?</th>
         </tr>
     </thead>
     
@@ -17,6 +18,13 @@
             <td>{{templateUserInfo.email}}</td>
             <td>{{templateUserInfo.username}}</td>
             <td>{{templateUserInfo.userId}}</td>
+            <td>
+                <div *ngIf="templateUserInfo.userId>0 &&
+                            templateUserInfo.userId<100;
+                            else myElseBlock">Yes
+                </div>
+                <ng-template #myElseBlock>No</ng-template>
+            </td>
         </tr>
     </tbody>    
 
